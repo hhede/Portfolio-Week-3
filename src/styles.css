@@ -8,7 +8,7 @@
 body {
   display: block;
   margin: 0;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 h1,
@@ -34,11 +34,40 @@ p {
   font-size: 18px;
   line-height: 1.5;
 }
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.about-images {
+  display: flex;
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
 
 .container-welcome {
   padding-top: 50px;
 }
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
 
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
@@ -51,38 +80,6 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
-.about-images {
-  display: flex;
-  margin: 30px 0;
-}
-
-.about-paragraphs p {
-  margin: 10px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 28px;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
 }
 
 .primary-link {
@@ -99,20 +96,28 @@ p {
   background: var(--primary-color);
 }
 
-.primart-l {
-  border-radius: 4px;
-  padding: 20px 15px;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-  text-transform: capitalize;
-  text-decoration: none;
-}
 .text-center {
   text-align: center !important;
 }
 
 @media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .email-link {
+    font-size: 20px;
+  }
+  .launch-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
   .sub-heading,
   .phone-display {
     display: block;
@@ -123,11 +128,5 @@ p {
     display: block;
     margin: 0 auto;
     text-align: center;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  .greeting {
-    font-size: small;
   }
 }
