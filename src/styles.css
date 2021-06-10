@@ -111,3 +111,23 @@ p {
 .text-center {
   text-align: center !important;
 }
+
+@media (max-width: 576px) {
+  .sub-heading,
+  .phone-display {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .launch-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .greeting {
+    font-size: small;
+  }
+}
